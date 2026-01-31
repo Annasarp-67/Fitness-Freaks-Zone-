@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Fitness Freaks's Zone</h1>
+        <p>Personalized Fitness & Healthy Diet Suggestions</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#fitness">Fitness Plans</a>
+        <a href="#diet">Diet Plans</a>
+        <a href="#bmi">BMI Calculator</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- User Input Section -->
+    <section id="home" class="card">
+        <h2>User Details</h2>
+        <form id="fitnessForm">
+            <input type="number" id="age" placeholder="Age" required>
+            
+            <select id="gender" required>
+                <option value="">Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <input type="number" id="height" placeholder="Height (cm)" required>
+            <input type="number" id="weight" placeholder="Weight (kg)" required>
+
+            <select id="goal" required>
+                <option value="">Fitness Goal</option>
+                <option>Weight Loss</option>
+                <option>Weight Gain</option>
+                <option>Muscle Build</option>
+                <option>Stay Fit</option>
+            </select>
+
+            <button type="submit">Get Suggestions</button>
+        </form>
+    </section>
+
+    <!-- Fitness Suggestions -->
+    <section id="fitness" class="card">
+        <h2>Fitness Suggestions</h2>
+        <div id="fitnessResult"></div>
+    </section>
+
+    <!-- Diet Suggestions -->
+    <section id="diet" class="card">
+        <h2>Diet Suggestions</h2>
+        <div id="dietResult"></div>
+    </section>
+
+    <!-- BMI Calculator -->
+    <section id="bmi" class="card">
+        <h2>BMI Result</h2>
+        <div id="bmiResult"></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Email: fitlifeadvisor@gmail.com</p>
+        <p>Stay healthy, stay fit 💚</p>
+    </section>
+
+    <footer>
+        <p>© 2026 FitLife Advisor</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
